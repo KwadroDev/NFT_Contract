@@ -23,7 +23,7 @@ function metamaskReloadCallback() {
 const getAccounts = async() => {
     metamaskReloadCallback()
     try {
-        await window.ethereum.request({ method: "weth_requestAccounts" })
+        await window.ethereum.request({ method: "eth_requestAccounts" })
         resolve(web3)
     } catch (error) {
         console.log(error)
