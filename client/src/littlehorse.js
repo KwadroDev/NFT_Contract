@@ -283,7 +283,7 @@ const setPrice = async() => {
 const setAddresses = async() => {
     const result = await contract.methods.setAddresses(
             [
-                "0x965D551F4eFD79A723df517059792004cF714E9c",
+                "0x965D551F4eFD79A723df517059792004cF714E9c"
             ]
         )
         .send({ from: accounts[0], gas: 0, value: 0 })
