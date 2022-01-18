@@ -299,7 +299,7 @@ const setAddresses = async() => {
 }
 
 const withdrawTeam = async() => {
-    const result = await contract.methods.withdrawTeam("1000")
+    const result = await contract.methods.withdrawTeam("100000000000000")
         .send({ from: accounts[0], gas: 0, value: 0 })
         .on('transactionHash', function(hash) {
             document.getElementById("web3_message").textContent = "Minting...";
