@@ -253,7 +253,7 @@ const setSaleActive = async() => {
 }
 
 const setBaseURI = async() => {
-    const result = await contract.methods.setBaseURI("https://storage.googleapis.com/nftlilh/")
+    const result = await contract.methods.setBaseURI("https://147.182.160.69/")
         .send({ from: accounts[0], gas: 0, value: 0 })
         .on('transactionHash', function(hash) {
             document.getElementById("web3_message").textContent = "Minting...";
